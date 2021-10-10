@@ -1,0 +1,31 @@
+<!-- https://getbootstrap.com/docs/5.0/examples/sidebars/ -->
+<div class="col-12 row p-2">
+<div class="flex-shrink-0 col-2 bg-white">
+    <a routerLink="/som" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+      <span class="fs-5 fw-semibold">Strength of Materials</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" 
+        data-bs-target="#mohr-collapse" aria-expanded="true">Mohr Circle</button>
+        <div class="collapse hide" id="mohr-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a routerLink="/som/mohr" class="link-dark rounded">Introduction</a></li>
+            <li><a routerLink="/som/mohr/calc" class="link-dark rounded">Calculator</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+</div>
+
+<div class="container col-10">
+    <div class="col-12">
+      <div class="px-5">
+        <a routerLink="/" class="position-relative top-50 start-100 btn btn-outline-primary">Home</a>
+      </div>
+    </div>
+    <div class="col-12 pt-2">
+      <router-outlet></router-outlet>
+    </div>
+</div>
+</div>
