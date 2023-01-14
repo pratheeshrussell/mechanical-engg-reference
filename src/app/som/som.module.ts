@@ -6,6 +6,9 @@ import { SomTemplateComponent } from './som-template/som-template.component';
 import { MohrIntroComponent } from './components/mohr-circle/subpages/mohr-intro/mohr-intro.component';
 import { MohrCalcComponent } from './components/mohr-circle/subpages/mohr-calc/mohr-calc.component';
 import { SomIntroComponent } from './som-template/subpages/som-intro/som-intro.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SomSidebarComponent } from './components/som-sidebar/som-sidebar.component';
+import { AppcommonModule } from '../appcommon/appcommon.module';
 
 
 
@@ -15,10 +18,14 @@ import { SomIntroComponent } from './som-template/subpages/som-intro/som-intro.c
     MohrIntroComponent,
     MohrCalcComponent,
     SomTemplateComponent,
-    SomIntroComponent
+    SomIntroComponent,
+    SomSidebarComponent,
   ],
   imports: [
-    CommonModule, SomRoutingModule
+    CommonModule,
+    ReactiveFormsModule,
+    SomRoutingModule,
+    AppcommonModule
   ]
 })
 export class SomModule { }

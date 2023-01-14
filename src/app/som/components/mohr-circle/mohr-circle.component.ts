@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mohr-circle.component.css']
 })
 export class MohrCircleComponent implements OnInit {
-  // Ref https://mechanicalc.com/calculators/mohrs-circle/
   constructor() { }
 
   ngOnInit(): void {

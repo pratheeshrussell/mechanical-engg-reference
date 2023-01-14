@@ -14,6 +14,8 @@ import { TemplateComponent } from './template/template.component';
     BrowserModule,
     AppRoutingModule
   ],
+  exports:[
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

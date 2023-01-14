@@ -8,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SomTemplateComponent implements OnInit {
 
+  showSidebarOnSmallScreen = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleSidebarOnSmallScreen(){
+    this.showSidebarOnSmallScreen = !this.showSidebarOnSmallScreen
+  }
 }

@@ -1,0 +1,12 @@
+<div [style.height]="graphHeight" [style.width]="graphWidth">
+    <div [id]="graphName" [style.height]="showStepController ? ('90%'): '100%'" [style.width]="'100%'" class="graph-container mohr-graph"></div>
+    <div id="graph_controller" [style.height]="'10%'" class="d-flex flex-row justify-content-center align-items-center my-3" *ngIf="showStepController && this.graphData.length > 0">
+        <button type="button" (click)="stepBack()" class="btn btn-outline-danger mx-3">
+            <i class="bi bi-skip-backward"></i>
+        </button>
+        <span>{{this.currentIndex + 1}} / {{this.graphData.length}}</span>
+        <button type="button" (click)="stepForward()" class="btn btn-outline-danger mx-3">
+            <i class="bi bi-skip-forward"></i>
+        </button>
+    </div>
+</div>
